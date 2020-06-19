@@ -1,0 +1,75 @@
+.root {
+
+}
+
+/**
+HBox, VBox {
+    -fx-border-color: red;
+}
+**/
+
+.contacts {
+    -fx-background-color: #443379;
+}
+
+.contactName {
+    -fx-font-size: 16px;
+    -fx-text-fill: #FFFFFF;
+}
+
+.icon {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 30px;
+}
+
+.contactNameHeader {
+    -fx-font-size: 16px;
+    -fx-text-fill: #443379;
+}
+
+.iconHeader {
+    -fx-background-color: #56409a;
+    -fx-background-radius: 50%;
+}
+
+#cat {
+    -fx-background-color: #56409a;
+}
+
+.header {
+    -fx-background-color: #FFFFFF;
+}
+
+.main {
+    -fx-background-color: #E5E5FF;
+}
+
+.footer {
+    -fx-background-color: #FFFFFF;
+}
+
+.messageFromRight {
+    -fx-background-color: #423179;
+    -fx-background-radius: 2em 2em 0 2em;
+}
+
+.messageText {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+}
+
+#sendButton {
+    -fx-padding: 15;
+    -fx-background-insets: 0;
+    -fx-background-radius: 8;
+    -fx-background-color: #56409a;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+    -fx-text-fill: #FFFFFF;
+}
+#sendButton:hover {
+    -fx-background-color: #443379;
+}
+#sendButton:pressed {
+    -fx-background-insets: 1;
+}
