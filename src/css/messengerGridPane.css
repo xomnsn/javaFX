@@ -1,14 +1,4 @@
-.root {
-
-}
-
-/**
-HBox, VBox {
-    -fx-border-color: red;
-}
-**/
-
-.contacts {
+.contact {
     -fx-background-color: #443379;
 }
 
@@ -41,7 +31,7 @@ HBox, VBox {
 }
 
 .main {
-    -fx-background-color: #E5E5FF;
+    -fx-background-color: #e5e5ff;
 }
 
 .footer {
@@ -65,7 +55,8 @@ HBox, VBox {
     -fx-background-color: #56409a;
     -fx-font-weight: bold;
     -fx-font-size: 1.1em;
-    -fx-text-fill: #FFFFFF;}
+    -fx-text-fill: #FFFFFF;
+}
 #sendButton:hover {
     -fx-background-color: #443379;
 }

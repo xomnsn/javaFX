@@ -77,7 +77,7 @@ public class MessengerHBoxVBox extends Application {
         stage.setMinHeight(300);
         stage.setMinWidth(400);
 
-        // Main layout elements initialization
+        // Layout
         HBox root = new HBox();
         VBox contacts = new VBox(5);
         ScrollPane contactsWrap = new ScrollPane(contacts);
@@ -87,8 +87,6 @@ public class MessengerHBoxVBox extends Application {
         ScrollPane main = new ScrollPane(messages);
         HBox footer = new HBox(10);
 
-
-        // Scene build
         Scene scene = new Scene(root);
         scene.getStylesheets().addAll("css/messengerHBoxVBox.css");
         stage.setScene(scene);
@@ -142,7 +140,16 @@ public class MessengerHBoxVBox extends Application {
         contacts.getChildren().addAll(capybara, cat, dog, horse);
 
 
-        // Setting up footer
+        // Header
+        HBox currentRecipient = makeContactElement(
+                "./media/messenger/icons/cat.png",
+                "Cat",
+                true
+        );
+        header.getChildren().addAll(currentRecipient);
+
+
+        // Footer
         TextArea textArea = new TextArea();
         textArea.setWrapText(true);
         textArea.setPrefWidth(600);
@@ -165,22 +172,6 @@ public class MessengerHBoxVBox extends Application {
         );
 
         messages.heightProperty().addListener(observable -> main.setVvalue(1D));
-
-
-        // Add sample messages
-        HBox currentRecipient = makeContactElement(
-                "./media/messenger/icons/cat.png",
-                "Cat",
-                true
-        );
-        header.getChildren().addAll(currentRecipient);
-
-
-
-
-
-
-
 
 
         stage.show();
