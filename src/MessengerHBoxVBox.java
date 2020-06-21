@@ -11,6 +11,10 @@ import javafx.stage.Stage;
 
 public class MessengerHBoxVBox extends Application {
 
+    public static void main(String[] args) {
+        launch(args);
+    }
+
     private HBox makeContactElement(String iconPath, String name, Boolean isHeader) {
         HBox contact = new HBox();
         contact.setSpacing(10);

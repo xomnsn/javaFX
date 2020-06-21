@@ -13,6 +13,10 @@ import javafx.scene.control.TextArea;
 
 public class MessengerGridPane extends Application {
 
+    public static void main(String[] args) {
+        launch(args);
+    }
+
     private HBox makeMessage(String text, Boolean sendFromRight) {
         HBox message = new HBox();
         message.setPrefWidth(700);
