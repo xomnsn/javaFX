@@ -45,8 +45,6 @@ public class MessengerGridPane extends Application {
         iv.setPreserveRatio(true);
 
         GridPane iconContainer = new GridPane();
-        ColumnConstraints iconConstraintColumn = new ColumnConstraints(60, 60, 60);
-        RowConstraints iconConstraintRow = new RowConstraints(60, 60, 60);
         iconContainer.setPadding(new javafx.geometry.Insets(5));
         iconContainer.add(iv, 0, 0, 1, 1);
 
@@ -158,7 +156,7 @@ public class MessengerGridPane extends Application {
         footer.add(send, 1, 0);
 
 
-        send.setOnAction(ev -> {
+        send.setOnAction(observable -> {
                     String message = textArea.getText();
                     if (!message.isEmpty())
                         messages

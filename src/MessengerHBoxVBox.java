@@ -161,7 +161,7 @@ public class MessengerHBoxVBox extends Application {
         footer.setPadding(new Insets(10));
 
 
-        send.setOnAction(ev -> {
+        send.setOnAction(observable -> {
             String message = textArea.getText();
             if (!message.isEmpty())
                     messages
